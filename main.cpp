@@ -103,6 +103,50 @@ int main()
     cout << neemTree.sciName << " " << neemTree.height << endl;
     cout << redwoodTree.sciName << " " << redwoodTree.height << endl;
 
+
+    /*
+        C++ References:
+        A reference variable is a reference to a existing variable and it is created
+        with the '&' operator.
+    */
+
+    string food = "palak-paneer";   //food variable
+    string &meal = food;            //reference to food
+
+    //we can use either ths variable name food or the reference name meal to refer to
+    //the food variable.
+
+    cout << food << endl;   // prints palak-paneer
+    cout << meal << endl;   // prints palak-paneer
+
+
+    /*
+        C++ Memory Address:
+        In the previous example the '&' operator was used to create a reference variable.
+        But it can also be used to get a memory address of a variable; which is the location
+        of where the variable is stored in the computer.
+
+        When a variable is created in C++, a memory address is assigned to the variable.
+        And when we assign a value to the variable, it is stored in the memory address.
+
+        To access it use the '&' operator, and the result will represent where the variable
+        is stored.
+
+    */
+    string lunch = "pizza";
+    cout << &lunch << endl; // 0x61fc0
+
+    /*
+        why is it useful to know memory address?
+        references and pointers are important in C++, because they give you the ability
+        to manipulate tha data in computers memory - which can reduce code and improve
+        the performance.
+    */
+
+
+
+
+
 }
 
 
